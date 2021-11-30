@@ -25,9 +25,9 @@ const TodoItem = (props) => {
 };
 
 TodoItem.propTypes = {
-  todo: PropTypes.isRequired,
-  handleChangeProps: PropTypes.isRequired,
-  deleteTodoProps: PropTypes.isRequired,
+  todo: PropTypes.objectOf(PropTypes.string).isRequired,
+  handleChangeProps: PropTypes.func.isRequired,
+  deleteTodoProps: PropTypes.func.isRequired,
 };
 
 export default TodoItem;
